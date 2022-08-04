@@ -3,6 +3,7 @@
     <head>
         <title>Glassmorphism Calculator UI</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        
     </head>
     <body>
         <div class="container">
@@ -28,5 +29,16 @@
                 <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
             </form>
         </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.js"></script>
+        <script src="https://unpkg.com/tilt.js@1.2.1/dest/tilt.jquery.min.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector(".container"), {
+                max: 25,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2,
+            })
+        </script>
     </body>
 </html>
