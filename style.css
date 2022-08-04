@@ -1,0 +1,52 @@
+@import url ('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63, #ffc107);
+    clip-path: circle(22% at 30% 20%);
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e91e63, #ffc107);
+    clip-path: circle(20% at 70% 90%);
+}
+
+.container {
+    position: relative;
+    background: reba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+}
+
+.container .calculator {
+    position: relative;
+    display: grid;
+}
